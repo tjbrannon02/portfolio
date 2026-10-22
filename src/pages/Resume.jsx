@@ -1,5 +1,7 @@
 import '../App.css'
 
+const resumeUrl = `${import.meta.env.BASE_URL}Resume_Timothy_James_Brannon.pdf`
+
 function Resume() {
   return (
     <main className="resume-page">
@@ -17,7 +19,7 @@ function Resume() {
 
         <div className="resume-actions">
           <a
-            href="/Brannon_TJ_Resume.pdf"
+            href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="button primary"
@@ -26,8 +28,8 @@ function Resume() {
           </a>
 
           <a
-            href="/Brannon_TJ_Resume.pdf"
-            download="TJ-Brannon-Resume.pdf"
+            href={resumeUrl}
+            download="Resume_Timothy_James_Brannon.pdf"
             className="button secondary"
           >
             Download PDF ↓
@@ -37,7 +39,7 @@ function Resume() {
 
       <section className="resume-document">
         <iframe
-          src="/Brannon_TJ_Resume.pdf"
+          src={resumeUrl}
           title="T.J. Brannon Resume"
           className="resume-iframe"
         />
